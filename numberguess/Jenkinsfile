@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    stages 
+    {
+
+        stage('Deliver') { 
+            steps { 
+                echo 'hi'
+                powershell './deploy.ps1'
+            }
+        }
+    }
+}
